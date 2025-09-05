@@ -1,6 +1,5 @@
 import { replaceVariables } from "@c4312/vscode-variables";
 import { Contract } from "@hediet/json-rpc";
-import { NodeJsMessageStream } from "@hediet/json-rpc-streams/src";
 import { spawn } from "child_process";
 import { randomUUID } from "crypto";
 import { parse as parseEnv } from "dotenv";
@@ -16,6 +15,7 @@ import { applyC8Coverage } from "./coverage";
 import { DisposableStore } from "./disposable";
 import { ExtensionConfig } from "./extension-config";
 import { last } from "./iterable";
+import { NodeJsMessageStream } from "./messagestream";
 import {
   ItemType,
   getContainingItemsForFile,

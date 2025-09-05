@@ -1,5 +1,4 @@
 import { Contract } from "@hediet/json-rpc";
-import { NodeJsMessageStream } from "@hediet/json-rpc-streams/src";
 import * as ansiColors from "ansi-colors";
 import { spawn } from "child_process";
 import { promises as fs } from "fs";
@@ -11,6 +10,7 @@ import { StackFrame } from "stacktrace-parser";
 import { pathToFileURL } from "url";
 import { WebSocket } from "ws";
 import { ExtensionConfig } from "./extension-config";
+import { NodeJsMessageStream } from "./messagestream";
 import { Capability, NodeVersion } from "./node-version";
 import { escapeRegex } from "./regex";
 import { ITestRunFile, JsonFromReporter, contract } from "./runner-protocol";
